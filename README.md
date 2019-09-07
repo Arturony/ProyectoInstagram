@@ -1,4 +1,4 @@
-# InstagramColegios
+# ProyectoInstagram
 
 This is a Django project about a webpage that looks like instagram. Feel free to clone and try it, the 
 steps to run and use the server are below.
