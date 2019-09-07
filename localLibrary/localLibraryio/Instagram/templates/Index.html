@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/TextBox.css' %}">
+    <link rel="shortcut icon" href="../static/Insta.ico" />
+    <meta charset="utf-8">
+    <title> Registrarse </title>
+  </head>
+  <body>
+    <main>
+
+
+    <article class="">
+
+      <center>
+        <br>
+        <div class="Complete">
+
+          <br>
+
+          <div class="w3-container w3-green">
+            <h2>Regístrate</h2>
+            </div>
+
+              <form class="w3-container" action="{% url 'index' %}" method="post">
+                {% csrf_token %}
+                <br>
+                <div class="RegisterField">
+                <br>
+                  <div class="Correo">
+                    <input type="text" name="correo" placeholder="Correo Electrónico" class="w3-input w3-border" />
+                  </div>
+                <br>
+                  <div class="Nombre">
+                    <input type="text" name="nombre" placeholder="Nombre Completo" class="w3-input w3-border" />
+                  </div>
+                <br>
+                  <div class="Usuario">
+                    <input type="text" name="usuario" placeholder="Usuario" class="w3-input w3-border" />
+                  </div>
+                <br>
+                  <div class="Pasword">
+                    <input type="password" name="password" placeholder="Contraseña" class="w3-input w3-border" />
+                  </div>
+                <br>
+                <br>
+                  <div class="Button">
+                    <input type="submit" value="Registrarse" class="w3-btn w3-green w3-round w3-ripple">
+                  </div>
+                  <br>
+                  <div class="Inicio">
+                    <a href="{% url 'login'%}" class="w3-btn w3-green w3-round w3-ripple">Inicia Sesión</a>
+                  </div>
+                </div>
+                <br>
+
+            </form>
+          </div>
+
+      </center>
+    </article>
+    </main>
+  </body>
+</html>
